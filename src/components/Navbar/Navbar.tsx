@@ -1,7 +1,7 @@
 import s from "@/styles/Navbar/Navbar.module.css";
 import Link from "next/link";
 
-type TLinkNav = {
+export type TLinkNav = {
   text: string;
   url: string;
 };
@@ -29,7 +29,7 @@ export default function Navbar() {
   );
 }
 
-let linksNav: TLinkNav[] = [
+export const linksNav: TLinkNav[] = [
   {
     text: "Inicio",
     url: "/",
