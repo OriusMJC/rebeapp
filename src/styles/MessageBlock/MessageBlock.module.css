@@ -1,0 +1,9 @@
+.MessageBlockContainer{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 56px;
+    border-radius: 20px;
+}

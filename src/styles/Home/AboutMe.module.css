@@ -1,0 +1,9 @@
+.AboutMeContainer {
+  display: flex;
+  gap: 89px;
+}
+.AboutMeContainer img{
+  height: fit-content;
+  width: 50%;
+  max-width: 719px;
+}

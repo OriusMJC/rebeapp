@@ -1,0 +1,30 @@
+.HomeHeroSection {
+  position: relative;
+}
+.HomeHeroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 580px;
+}
+
+.HomeHeroText {
+  width: 50%;
+  max-width: 788px;
+}
+.HomeHeroText h3 {
+  margin-bottom: 75px;
+}
+
+.HomeHeroImgContainer {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  max-width: 950px;
+  max-height: 580px;
+  border-radius: 20px 0 0 20px;
+}
+.HomeHeroImgContainer img {
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+}
