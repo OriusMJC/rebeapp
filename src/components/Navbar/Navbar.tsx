@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className={s.NavbarOptions}>
             {linksNav?.map((obj: TLinkNav) => {
               return (
-                <Link href={obj.url} className="font-text">
+                <Link key={obj.text} href={obj.url} className="font-text">
                   {obj.text}
                 </Link>
               );

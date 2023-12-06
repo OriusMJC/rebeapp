@@ -14,8 +14,8 @@ export default function Home() {
       <Hero/>
       <AboutMe/>
       <MessageBlock>
-        "Nutre tu mente y cuerpo con decisiones conscientes, trazando el camino
-        hacia un bienestar integral que te pertenece por completo."
+        {'"'}Nutre tu mente y cuerpo con decisiones conscientes, trazando el camino
+        hacia un bienestar integral que te pertenece por completo.{'"'}
       </MessageBlock>
       <MyServices/>
       <Testimonials/>

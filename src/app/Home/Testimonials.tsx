@@ -23,7 +23,7 @@ export default function Testimonials(){
                       <div></div>
                       <div className={s.CardTestimonialData}>
                         <p className="font-text-2">
-                          "{t.message}"
+                        {'"'}{t.message}{'"'}
                         </p>
                         <div className={s.CardTestimonialUser}>
                           <img src={t.user.photo} alt={t.user.name}/>
