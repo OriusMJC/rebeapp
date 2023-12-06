@@ -21,7 +21,7 @@ export default function MyServices() {
           <div className={s.CardsServicesContainer}>
             {dataArray?.map((data: TService, i: number) => {
               return (
-                <div className={s.CardServices}>
+                <div key={data.Title} className={s.CardServices}>
                   <div className={s.CardServicesHeader}>
                     <label className="font-label">{data.Title}</label>
                   </div>
@@ -29,7 +29,7 @@ export default function MyServices() {
                     <p className="font-description-3">{data.Description}</p>
                     <div className={s.CardServicesButtonsCont}>
                       {data.buttons?.map((btn) => {
-                        return <ServicesButton btn={btn} />;
+                        return <ServicesButton key={btn.text} btn={btn} />;
                       })}
                     </div>
                   </div>
