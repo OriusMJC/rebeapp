@@ -5,6 +5,7 @@ import MessageBlock from "@/components/MessageBlock/MessageBlock";
 import Hero from "./Home/Hero";
 import AboutMe from "./Home/AboutMe";
 import MyServices from "./Home/MyServices";
+import Testimonials from "./Home/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         hacia un bienestar integral que te pertenece por completo."
       </MessageBlock>
       <MyServices/>
+      <Testimonials/>
     </main>
   );
 }

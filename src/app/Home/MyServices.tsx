@@ -1,5 +1,17 @@
 import s from "@/styles/Home/MyServices.module.css";
 
+type TService = {
+  Title: string;
+  Description: string;
+  buttons: TServiceButton[];
+};
+type TServiceButton = {
+  text: string;
+  iconURL: string;
+  donwload: boolean;
+  link: string;
+};
+
 export default function MyServices() {
   return (
     <section>
@@ -41,18 +53,6 @@ const ServicesButton = ({ btn }: { btn: TServiceButton }) => {
       <div className="font-text">{btn.text}</div>
     </a>
   );
-};
-
-type TService = {
-  Title: string;
-  Description: string;
-  buttons: TServiceButton[];
-};
-type TServiceButton = {
-  text: string;
-  iconURL: string;
-  donwload: boolean;
-  link: string;
 };
 
 const dataArray: TService[] = [

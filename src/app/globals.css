@@ -94,6 +94,12 @@ a {
   font-weight: 400;
   line-height: normal;
 }
+.font-small-label{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .font-description{
   font-size: 30px;
   font-style: normal;
@@ -115,6 +121,19 @@ a {
 }
 .font-text{
   font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.font-text-2{
+  /* font-family: MADE Mirage; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.font-subtext{
+  font-size: 24px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
