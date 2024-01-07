@@ -26,6 +26,7 @@
   gap: 71px;
 }
 .CardServices{
+  background-color: var(--color-white);
   width: 100%;
   max-width: 719px;
   border-radius: 20px;
@@ -76,4 +77,55 @@
   background-color: var(--color-primary);
   padding: 14px 20px;
   border-radius: 0 20px 20px 0;
+}
+
+@media (width < 1300px) {
+  .MyServicesContainer{
+    flex-direction: column;
+  }
+  .MyServices{
+    gap: 72px;
+    width: 100%;
+    max-width: none;
+  }
+  .CardServicesButtonsCont{
+    flex-wrap: wrap;
+  }
+  .MyServicesImg{
+    height: fit-content;
+    width: 100%;
+    max-width: 487px;
+    margin-left: auto;
+  }
+}
+@media (width < 520px) {
+  .MyServices{
+    gap: 32px;
+  }
+  .CardsServicesContainer{
+    gap: 40px;
+  }
+  .CardServicesHeader{
+    padding: 23px 33px;
+  }
+  .CardServicesBody{
+    padding: 20px 33px 40px;
+  }
+  .CardServices label{
+    font-size: 30px;
+  }
+  .CardServices p{
+    font-size: 23px;
+  }
+  .CardServicesButtonsCont{
+    gap: 20px;
+  }
+  .ServicesButton div{
+    font-size: 22px;
+  }
+  .ServicesButton div:first-child img{
+    height: 22px;
+    width: 22px;
+    margin: auto;
+  }
 }

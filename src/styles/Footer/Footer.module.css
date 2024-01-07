@@ -8,11 +8,16 @@
   gap: 90px;
 }
 
+.FooterIMG{
+  object-fit: contain;
+}
+
 .FooterDataContainer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 65%;
+  gap: 40px;
 }
 .FooterLinks{
   display: flex;
@@ -24,6 +29,7 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  gap: 20px;
 }
 .FooterTextAndSM p{
   width: 70%;
@@ -38,7 +44,6 @@
 .FooterSocialMedia{
   display: flex;
   justify-content: space-between;
-  gap: 34px;
   width: 30%;
 }
 .FooterSocialMedia a{
@@ -69,4 +74,58 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+@media (width < 1380px) {
+  .FooterContainer{
+    gap: 70px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .FooterDataContainer{
+    width: 100%;
+  }
+}
+@media (width < 900px) {
+  .FooterLinks{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .FooterTextAndSM{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .FooterTextAndSM p{
+    width: 100%;
+    text-align: center;
+  }
+  .FooterSocialMedia{
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+}
+@media (width < 520px) {
+  .FooterLinks a{
+    font-size: 28px;
+  }
+  .FooterTextAndSM p{
+    font-size: 26px;
+  }
+  .FooterCopyright p{
+    font-size: 20px;
+  }
+}
+@media (width < 400px) {
+  .FooterIMG{
+    width: 100%;
+  }
+  .FooterSocialMedia{
+    flex-wrap: wrap;
+  }
+  .FooterCopyright p{
+    font-size: 14px;
+  }
 }

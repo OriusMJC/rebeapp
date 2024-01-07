@@ -1,9 +1,26 @@
-.MessageBlockContainer{
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    display: grid;
-    place-content: center;
-    text-align: center;
-    padding: 56px;
-    border-radius: 20px;
+.MessageBlockContainer {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 56px;
+  border-radius: 20px;
+}
+
+@media (width < 768px) {
+  .MessageBlockContainer {
+    padding: 36px;
+  }
+  .MessageBlockContainer p{
+    font-size: 30px;
+  }
+}
+@media (width < 420px) {
+  .MessageBlockContainer {
+    padding: 26px;
+  }
+  .MessageBlockContainer p{
+    font-size: 24px;
+  }
 }

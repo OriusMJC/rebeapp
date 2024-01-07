@@ -10,11 +10,29 @@
   width: 100%;
 }
 
+.TestimonialsContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  max-width: 1239px;
+  height: fit-content;
+  min-height: 335px;
+}
+.TestimonialsContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  width: 50px;
+  background: linear-gradient(to left, white, transparent);
+}
 .Testimonials {
   display: flex;
   flex-wrap: nowrap;
   gap: 50px;
-  width: 90%;
+  width: 100%;
   max-width: 1239px;
   height: fit-content;
   min-height: 335px;
@@ -24,6 +42,7 @@
 }
 
 .CardTestimonial{
+  background-color: var(--color-white);
   height: 324px;
   margin-bottom: 20px;
   min-width: 378px;
@@ -58,4 +77,37 @@
   margin-top: 15%;
   margin-right: 20px;
   border: none;
+}
+
+@media (width < 1000px) {
+  .TestimonialsFullContainer{
+    width: 100%;
+  }
+  .TestimonialsButton{
+    display: none;
+  }
+  .TestimonialsContainer {
+    width: 106%;
+  }
+  .TestimonialsContainer::after {
+    right: 0px;
+    width: 0px;
+    background: transparent;
+  }
+  .Testimonials {
+    padding: 0 20px 0 3px;
+  }
+}
+@media (width < 520px) {
+  .CardTestimonial{
+    height: 314px;
+    padding: 0 0 25px;
+  }
+  .CardTestimonial .CardTestimonialData{
+    padding: 20px 20px 30px;
+  }
+  .CardTestimonial .CardTestimonialUser{
+    display: flex;
+    gap: 15px;
+  }
 }

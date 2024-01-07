@@ -8,6 +8,7 @@
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 60px;
   padding: 54px 72px;
   border-radius: 20px;
@@ -57,4 +58,60 @@
   width: 40%;
   max-width: 543px;
   border-radius: 20px;
+  object-fit: contain;
+}
+
+@media (width < 1280px) {
+  .ConectWhitMeBlock{
+    flex-direction: column;
+  }
+  .ConectWhitMeBlock div{
+    width: 100%;
+    max-width: none;
+  }
+  .ConectWhitMeBlock img{
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (width < 650px) {
+  .ConectWhitMeBlock{
+    padding: 44px 52px;
+  }
+  .ConectWhitMeBlock div{
+    width: 100%;
+    max-width: none;
+  }
+  .ConectWhitMeBlock img{
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (width < 520px) {
+  .ConectWhitMeBlock{
+    padding: 24px 32px;
+  }
+  .ConectWhitMeBlock div h4{
+    font-size: 32px;
+  }
+  .ConectWhitMeBlock div p{
+    font-size: 28px;
+  }
+  .ConectWhitMeBlock div a{
+    font-size: 28px;
+  }
+}
+@media (width < 400px) {
+  .ConectWhitMeBlock{
+    padding: 24px;
+  }
+  .ConectWhitMeBlock div h4{
+    font-size: 28px;
+  }
+  .ConectWhitMeBlock div p{
+    font-size: 24px;
+  }
+  .ConectWhitMeBlock div a{
+    font-size: 24px;
+  }
 }

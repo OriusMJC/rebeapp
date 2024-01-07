@@ -1,9 +1,49 @@
 .AboutMeContainer {
   display: flex;
   gap: 89px;
+  padding-right: 10px;
 }
 .AboutMeContainer img{
   height: fit-content;
   width: 50%;
   max-width: 719px;
+}
+
+@media (width < 1300px) {
+  .AboutMeContainer {
+    flex-direction: column-reverse;
+  }
+  .AboutMeContainer img{
+    max-height: 800px;
+    width: 90vw;
+    max-width: none;
+    margin-left: auto;
+    margin-right: 0;
+    object-fit: contain;
+    object-position: right;
+  }
+}
+@media (width < 520px) {
+  .AboutMeContainer {
+    gap: 60px;
+  }
+  .AboutMeContainer h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  .AboutMeContainer p{
+    font-size: 30px;
+  }
+}
+@media (width < 400px) {
+  .AboutMeContainer {
+    gap: 60px;
+  }
+  .AboutMeContainer h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .AboutMeContainer p{
+    font-size: 25px;
+  }
 }

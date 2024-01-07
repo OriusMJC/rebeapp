@@ -8,6 +8,7 @@
 }
 
 .StoreProductCard{
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,12 +22,33 @@
 }
 .StoreProductCardFooter{
   background-color: var(--color-grey);
-  height: 117px;
+  min-height: 117px;
   padding: 30px 38px;
   border-radius: 0 0 20px 20px;
 }
 .StoreProductCardFooter label{
-  background-color: var(--color-grey);
   height: 117px;
-  padding: 30px 38px;
+}
+
+@media (width < 1300px) {
+  .StoreProductsContainer{
+    gap: 40px;
+    justify-content: center;
+  }
+}
+@media (width < 520px) {
+  .StoreProductsContainer{
+    margin: 45px auto 10px;
+  }
+  .StoreProductCard{
+    min-height: 350px;
+  }
+  .StoreProductCardFooter{
+    min-height: 80px;
+    padding: 20px 28px;
+  }
+  .StoreProductCardFooter label{
+    text-align: center;
+    font-size: 32px;
+  }
 }
