@@ -28,7 +28,7 @@ export default function Footer(){
                 {
                   socialsMedia?.map((scm)=>{
                     return (
-                      <a href={scm.linkURL} target="_blank">
+                      <a key={scm.linkURL} href={scm.linkURL} target="_blank">
                         <img src={scm.icon} alt={scm.icon} />
                       </a>
                     )

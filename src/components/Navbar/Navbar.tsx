@@ -40,11 +40,11 @@ export const linksNav: TLinkNav[] = [
   },
   {
     text: "Mis servicios",
-    url: "#MiServicios",
+    url: "/#MiServicios",
   },
   {
     text: "Sobre mi",
-    url: "#SobreMi",
+    url: "/#SobreMi",
   },
   {
     text: "Contacto",
