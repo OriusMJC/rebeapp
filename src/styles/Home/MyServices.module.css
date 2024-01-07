@@ -106,26 +106,26 @@
     gap: 40px;
   }
   .CardServicesHeader{
-    padding: 23px 33px;
+    padding: 18px 28px;
   }
   .CardServicesBody{
-    padding: 20px 33px 40px;
+    padding: 20px 28px 40px;
   }
   .CardServices label{
-    font-size: 30px;
+    font-size: 25px;
   }
   .CardServices p{
-    font-size: 23px;
+    font-size: 18px;
   }
   .CardServicesButtonsCont{
     gap: 20px;
   }
   .ServicesButton div{
-    font-size: 22px;
+    font-size: 17px;
   }
   .ServicesButton div:first-child img{
-    height: 22px;
-    width: 22px;
+    height: 17px;
+    width: 17px;
     margin: auto;
   }
 }

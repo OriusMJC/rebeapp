@@ -13,6 +13,37 @@
   --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Medium.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Black.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -70,7 +101,7 @@ a {
 }
 
 .font-title-header{
-  /* font-family: MADE Mirage; */
+  font-family: MADE-Mirage !important;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
@@ -108,7 +139,7 @@ a {
   line-height: normal;
 }
 .font-description-2{
-  /* font-family: MADE Mirage; */
+  font-family: MADE-Mirage;
   font-size: 46px;
   font-style: normal;
   font-weight: 400;
@@ -127,7 +158,7 @@ a {
   line-height: normal;
 }
 .font-text-2{
-  /* font-family: MADE Mirage; */
+  font-family: MADE-Mirage;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -147,12 +178,15 @@ a {
 }
 @media (width < 520px) {
   .font-title-header{
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 @media (width < 400px) {
+  section{
+    padding: 55px 0;
+  }
   .font-title-header{
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 

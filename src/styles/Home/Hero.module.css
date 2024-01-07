@@ -85,6 +85,9 @@
   }
 }
 @media (width < 400px) {
+  .HomeHeroSection {
+    margin-bottom: 50px;
+  }
   .HomeHeroContainer {
     min-height: 0;
     gap: 30px;
@@ -93,11 +96,11 @@
     width: 90%;
   }
   .HomeHeroText h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 15px;
   }
   .HomeHeroText h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .HomeHeroImgContainer {
     height: 140px;

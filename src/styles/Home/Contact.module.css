@@ -106,12 +106,13 @@
     padding: 24px;
   }
   .ConectWhitMeBlock div h4{
-    font-size: 28px;
+    font-size: 23px;
   }
   .ConectWhitMeBlock div p{
-    font-size: 24px;
+    font-size: 19px;
   }
   .ConectWhitMeBlock div a{
-    font-size: 24px;
+    font-size: 19px;
+    padding: 4px 18px;
   }
 }

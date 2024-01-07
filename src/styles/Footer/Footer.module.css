@@ -34,10 +34,10 @@
 .FooterTextAndSM p{
   width: 70%;
   max-width: 650px;
-  /* font-family: MADE Mirage; */
+  font-family: MADE-Mirage;
   font-size: 40px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -120,12 +120,34 @@
 }
 @media (width < 400px) {
   .FooterIMG{
-    width: 100%;
+    width: 80%;
+    margin: auto;
   }
   .FooterSocialMedia{
     flex-wrap: wrap;
   }
+  .FooterLinks{
+    gap: 15px;
+  }
+  .FooterLinks a{
+    font-size: 21px;
+  }
+  .FooterTextAndSM p{
+    font-size: 18px;
+  }
   .FooterCopyright p{
     font-size: 14px;
+  }
+  .FooterSocialMedia a{
+    height: 42px;
+    width: 42px;
+  }
+  .FooterSocialMedia a:first-child img{
+    height: 20px;
+    width: 20px;
+  }
+  .FooterSocialMedia a img{
+    height: 20px;
+    width: 20px;
   }
 }

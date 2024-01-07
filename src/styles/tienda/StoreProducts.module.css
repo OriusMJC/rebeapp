@@ -3,11 +3,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 30px;
   margin: 125px auto 180px;
 }
 
 .StoreProductCard{
+  color: var(--color-white);
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
