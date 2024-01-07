@@ -1,4 +1,5 @@
 .Navbar{
+  /* background-color: green; */
   display: flex;
   align-items: center;
   gap: 70px;
@@ -9,4 +10,114 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
+}
+.NavbarOptionsMobile{
+  display: none;
+  justify-content: space-between;
+  width: 80%;
+}
+.navBtnBurger {
+  display: none;
+}
+
+@media (width < 1300px) {
+  .HeaderNavbar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .Navbar{
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .NavbarOptions{
+    opacity: 0;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    right: 0;
+    top: calc(100% - 80px);
+    flex-direction: column;
+    width: 0px;
+    max-width: 400px;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    transition: .5s;
+    z-index: 5;
+    border-radius: 20px;
+  }
+  .NavbarOptions a{
+    opacity: 0;
+    transition: .1s;
+    text-wrap: nowrap;
+  }
+  .NavbarOptionsMobileOpen{
+    opacity: 1;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    height: max-content;
+  }
+  .NavbarOptionsMobileOpen a{
+    opacity: 1;
+    transition: .2s;
+  }
+  .NavbarOptionsMobileOpen a:hover{
+    color: var(--color-green);
+  }
+  .navBtnBurger {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: var(--box-shadow);
+  }
+  .navBtnLine {
+    width: 2rem;
+    height: 0.25rem;
+    background: var(--color-primary);
+    transition: all 0.3s linear;
+    border-radius: 5px;
+  }
+  .navBtnBurgerOpen{
+    position: relative;
+  }
+  .navBtnBurgerOpen .navBtnLine:nth-child(1) {
+    position: absolute;
+    margin: auto;
+    transform: rotate(-45deg);
+  }
+  
+  .navBtnBurgerOpen .navBtnLine:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navBtnBurgerOpen .navBtnLine:nth-child(3) {
+    position: absolute;
+    margin: auto;
+    transform: rotate(45deg);
+  }
+}
+@media (width < 520px) {
+  .Navbar{
+    padding-bottom: 10px;
+  }
+  .NavbarOptions{
+    top: 100%;
+  }
+}
+@media (width < 400px) {
+  .NavbarOptions a{
+    font-size: 28px;
+  }
 }

@@ -17,6 +17,9 @@
 
 
 @media (width < 520px) {
+  .HeroStoreSection {
+    margin-top: 50px;
+  }
   .HeroStoreContainer h3 {
     font-size: 30px;
   }

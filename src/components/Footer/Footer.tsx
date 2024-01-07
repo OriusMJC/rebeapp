@@ -1,6 +1,6 @@
 import s from '@/styles/Footer/Footer.module.css';
 import Link from "next/link";
-import { TLinkNav, linksNav } from "../Navbar/Navbar";
+import { TLinkNav, linksNav } from '../Navbar/linksNav';
 
 export default function Footer(){
   const date = new Date();
