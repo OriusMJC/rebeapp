@@ -139,5 +139,19 @@ a {
   line-height: normal;
 }
 
-
+@media (width < 768px) {
+  section{
+    padding: 75px 0;
+  }
+}
+@media (width < 520px) {
+  .font-title-header{
+    font-size: 45px;
+  }
+}
+@media (width < 400px) {
+  .font-title-header{
+    font-size: 35px;
+  }
+}
 

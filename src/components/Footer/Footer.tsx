@@ -9,7 +9,7 @@ export default function Footer(){
     <footer>
       <section className={s.FooterSection}>
         <div className={`container ${s.FooterContainer}`}>
-          <img src="/assets/img/RebecaLogoFooter.png"/>
+          <img className={s.FooterIMG} src="/assets/img/RebecaLogoFooter.png"/>
           <div className={s.FooterDataContainer}>
             <div className={s.FooterLinks}>
               {linksNav?.map((obj: TLinkNav) => {

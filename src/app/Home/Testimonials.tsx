@@ -15,29 +15,31 @@ export default function Testimonials(){
         <div className={`smallContainer ${s.TestimonialsFullContainer}`}>
           <h2 className="font-title-header">Testimonios</h2>
           <div className={s.TestimonialsAndButton}>
-            <ul className={s.Testimonials}>
-              {
-                TestimonialsArray?.map((t:TTestimonial,i:number)=>{
-                  return (
-                    <li className={s.CardTestimonial} key={i}>
-                      <div></div>
-                      <div className={s.CardTestimonialData}>
-                        <p className="font-text-2">
-                        {'"'}{t.message}{'"'}
-                        </p>
-                        <div className={s.CardTestimonialUser}>
-                          <img src={t.user.photo} alt={t.user.name}/>
-                          <div>
-                            <label className="font-small-label">{t.user.name}</label>
-                            <h6 className="font-subtext">{t.user.subtext}</h6>
+            <div className={s.TestimonialsContainer}>
+              <ul className={s.Testimonials}>
+                {
+                  TestimonialsArray?.map((t:TTestimonial,i:number)=>{
+                    return (
+                      <li className={s.CardTestimonial} key={i}>
+                        <div></div>
+                        <div className={s.CardTestimonialData}>
+                          <p className="font-text-2">
+                          {'"'}{t.message}{'"'}
+                          </p>
+                          <div className={s.CardTestimonialUser}>
+                            <img src={t.user.photo} alt={t.user.name}/>
+                            <div>
+                              <label className="font-small-label">{t.user.name}</label>
+                              <h6 className="font-subtext">{t.user.subtext}</h6>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </li>
-                  )
-                })
-              }
-            </ul>
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
             <button className={s.TestimonialsButton}>
               <img src='/assets/icons/ArrowRight.svg'/>
             </button>
