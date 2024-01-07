@@ -2,7 +2,7 @@ import s from "@/styles/Home/AboutMe.module.css";
 
 export default function AboutMe() {
   return (
-    <section>
+    <section id="SobreMi">
       <div className={`container`}>
         <div className={`smallContainer ${s.AboutMeContainer}`}>
           <img src="/assets/img/rebeaboutme.png" alt="rebe photo about me" />

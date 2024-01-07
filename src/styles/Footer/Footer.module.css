@@ -38,6 +38,7 @@
 .FooterSocialMedia{
   display: flex;
   justify-content: space-between;
+  gap: 34px;
   width: 30%;
 }
 .FooterSocialMedia a{
