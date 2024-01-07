@@ -1,7 +1,7 @@
 import s from "@/styles/Navbar/Navbar.module.css";
 import Link from "next/link";
 
-type TLinkNav = {
+export type TLinkNav = {
   text: string;
   url: string;
 };
@@ -29,25 +29,25 @@ export default function Navbar() {
   );
 }
 
-let linksNav: TLinkNav[] = [
+export const linksNav: TLinkNav[] = [
   {
     text: "Inicio",
     url: "/",
   },
   {
     text: "Tienda",
-    url: "/",
+    url: "/tienda",
   },
   {
     text: "Mis servicios",
-    url: "/",
+    url: "/#MiServicios",
   },
   {
     text: "Sobre mi",
-    url: "/",
+    url: "/#SobreMi",
   },
   {
     text: "Contacto",
-    url: "/",
+    url: "#Contacto",
   },
 ];

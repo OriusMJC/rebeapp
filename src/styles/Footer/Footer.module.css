@@ -1,0 +1,72 @@
+.FooterSection{
+  background-color: var(--color-primary);
+}
+
+.FooterContainer{
+  color: var(--color-white);
+  display: flex;
+  gap: 90px;
+}
+
+.FooterDataContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 65%;
+}
+.FooterLinks{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.FooterTextAndSM{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.FooterTextAndSM p{
+  width: 70%;
+  max-width: 650px;
+  /* font-family: MADE Mirage; */
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.FooterSocialMedia{
+  display: flex;
+  justify-content: space-between;
+  gap: 34px;
+  width: 30%;
+}
+.FooterSocialMedia a{
+  background-color: var(--color-white);
+  display: grid;
+  place-items: center;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+}
+.FooterSocialMedia a:first-child img{
+  height: 28px;
+  width: 28px;
+}
+.FooterSocialMedia a img{
+  height: 32px;
+  width: 32px;
+}
+
+.FooterCopyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.FooterCopyright p{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}

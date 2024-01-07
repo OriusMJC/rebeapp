@@ -2,7 +2,7 @@ import s from "@/styles/Home/Contact.module.css";
 
 export default function Contact() {
   return (
-    <section>
+    <section id="Contacto">
       <div className={`container ${s.ContactContainer}`}>
         <h2 className="font-title-header">Conecta conmigo</h2>
         <div className={s.ConectWhitMeBlock}>

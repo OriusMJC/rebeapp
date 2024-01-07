@@ -14,7 +14,7 @@ type TServiceButton = {
 
 export default function MyServices() {
   return (
-    <section>
+    <section id="MiServicios">
       <div className={`container ${s.MyServicesContainer}`}>
         <div className={s.MyServices}>
           <h2 className="font-title-header">Mis servicios</h2>
