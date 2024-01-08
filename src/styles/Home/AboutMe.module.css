@@ -4,6 +4,11 @@
   gap: 89px;
   padding-right: 10px;
 }
+.AboutMeContainer div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .AboutMeContainer img{
   height: 100%;
   width: 100%;

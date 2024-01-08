@@ -1,5 +1,4 @@
 .Navbar{
-  /* background-color: green; */
   display: flex;
   align-items: center;
   gap: 70px;
@@ -8,7 +7,7 @@
 
 .NavbarOptions{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 80%;
 }
 .NavbarOptionsMobile{

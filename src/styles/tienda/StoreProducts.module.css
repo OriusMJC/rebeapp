@@ -14,7 +14,9 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 465px;
-  width: 465px;
+  width: 30%;
+  min-width: 320px;
+  max-width: 445px;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
 }
@@ -23,18 +25,25 @@
 }
 .StoreProductCardFooter{
   background-color: var(--color-grey);
-  min-height: 117px;
+  min-height: 100px;
   padding: 30px 38px;
   border-radius: 0 0 20px 20px;
-}
-.StoreProductCardFooter label{
-  height: 117px;
 }
 
 @media (width < 1300px) {
   .StoreProductsContainer{
     gap: 40px;
     justify-content: center;
+  }
+}
+@media (width < 1160px) {
+  .StoreProductCard{
+    width: 50%;
+  }
+}
+@media (width < 1030px) {
+  .StoreProductCard{
+    width: 100%;
   }
 }
 @media (width < 520px) {

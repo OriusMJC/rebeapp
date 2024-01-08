@@ -2,7 +2,7 @@
   cursor: pointer;
   color: var(--color-white);
   background-color: var(--color-primary);
-  padding: 24px 30px;
+  padding: 20px 25px;
   border-radius: 20px;
   border: 1px solid var(--color-primary);
   transition: all .3s ease-in-out;

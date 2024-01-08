@@ -16,24 +16,18 @@
 .ConectWhitMeBlock div{
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 60%;
+  gap: 30px;
+  width: 50%;
   max-width: 828px;
 }
 .ConectWhitMeBlock div h4{
-  font-size: 48px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .ConectWhitMeBlock div p{
-  font-size: 42px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
-}
-.ConectWhitMeBlock div p{
-  font-size: 42px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
