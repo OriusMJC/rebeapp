@@ -42,9 +42,6 @@ export default function Testimonials() {
                 })}
               </ul>
             </div>
-            <button className={s.TestimonialsButton}>
-              <img src="/assets/icons/ArrowRight.svg" alt="arrow" />
-            </button>
           </div>
         </div>
       </div>
@@ -68,15 +65,6 @@ const TestimonialsArray: TTestimonial[] = [
     user: {
       photo: "/assets/img/testi2.png",
       name: "Susana",
-      subtext: "Lorem Ipsum",
-    },
-  },
-  {
-    message:
-      "Deje de vivir con atracones, Rebe me enseño a vivir una vida sin presiones.",
-    user: {
-      photo: "/assets/img/testi3.png",
-      name: "Carlos Orrego",
       subtext: "Lorem Ipsum",
     },
   },

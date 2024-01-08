@@ -19,26 +19,14 @@
   height: fit-content;
   min-height: 335px;
 }
-.TestimonialsContainer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  width: 25px;
-  background: linear-gradient(to left, #FFFEF7, transparent);
-}
 .Testimonials {
   display: flex;
   flex-wrap: nowrap;
   gap: 50px;
   width: 100%;
-  max-width: 1239px;
   height: fit-content;
   min-height: 335px;
   padding: 0px 25px 0px 5px;
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .CardTestimonial{
@@ -97,6 +85,11 @@
   }
   .Testimonials {
     padding: 0 20px 0 3px;
+    overflow-x: scroll;
+    scrollbar-width: 0;
+  }
+  .Testimonials::-webkit-scrollbar{
+    width: 0;
   }
 }
 @media (width < 520px) {
@@ -120,7 +113,7 @@
 }
 @media (width < 400px) {
   .CardTestimonial{
-    height: 274px;
+    height: 250px;
     padding: 0 0 25px;
     min-width: 320px;
   }
