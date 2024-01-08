@@ -1,21 +1,24 @@
 .MyServicesContainer{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   /* flex-wrap: wrap; */
   justify-content: space-between;
   gap: 50px;
 }
 
 .MyServicesImg{
-  height: fit-content;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   max-width: 787px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .MyServices{
   display: flex;
   flex-direction: column;
   gap: 72px;
-  width: 50%;
+  width: 100%;
   max-width: 719px;
 }
 
@@ -77,10 +80,20 @@
   background-color: var(--color-primary);
   padding: 14px 20px;
   border-radius: 0 20px 20px 0;
+  transition: all .3s ease;
+  border: 1px solid var(--color-primary);
+  border-left: none;
+}
+.ServicesButton div:last-child:hover{
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-left: none;
 }
 
 @media (width < 1300px) {
   .MyServicesContainer{
+    display: flex;
     flex-direction: column;
   }
   .MyServices{
@@ -92,10 +105,7 @@
     flex-wrap: wrap;
   }
   .MyServicesImg{
-    height: fit-content;
-    width: 100%;
-    max-width: 487px;
-    margin-left: auto;
+    display: none;
   }
 }
 @media (width < 520px) {

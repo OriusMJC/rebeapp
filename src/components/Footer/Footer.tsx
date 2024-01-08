@@ -1,15 +1,15 @@
-import s from '@/styles/Footer/Footer.module.css';
+import s from "@/styles/Footer/Footer.module.css";
 import Link from "next/link";
-import { TLinkNav, linksNav } from '../Navbar/linksNav';
+import { TLinkNav, linksNav } from "../Navbar/linksNav";
 
-export default function Footer(){
+export default function Footer() {
   const date = new Date();
 
-  return(
+  return (
     <footer>
       <section className={s.FooterSection}>
         <div className={`container ${s.FooterContainer}`}>
-          <img className={s.FooterIMG} src="/assets/img/RebecaLogoFooter.png"/>
+          <img className={s.FooterIMG} src="/assets/img/RebecaLogoFooter.png" />
           <div className={s.FooterDataContainer}>
             <div className={s.FooterLinks}>
               {linksNav?.map((obj: TLinkNav) => {
@@ -21,29 +21,34 @@ export default function Footer(){
               })}
             </div>
             <div className={s.FooterTextAndSM}>
-              <p>
-                Acompáñame para recibir consejos adicionales y orientación
-              </p>
+              <p>Acompáñame para recibir consejos adicionales y orientación</p>
               <div className={s.FooterSocialMedia}>
-                {
-                  socialsMedia?.map((scm)=>{
-                    return (
-                      <a key={scm.linkURL} href={scm.linkURL} target="_blank">
-                        <img src={scm.icon} alt={scm.icon} />
-                      </a>
-                    )
-                  })
-                }
+                {socialsMedia?.map((scm) => {
+                  return (
+                    <a key={scm.linkURL} href={scm.linkURL} target="_blank">
+                      <img src={scm.icon} alt={scm.icon} />
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>
         </div>
       </section>
       <div className={`container ${s.FooterCopyright}`}>
-        <p>Rebeca Aguilar {date.getFullYear()} - Powered by <strong>NEURO STUDIO</strong></p>
+        <p>
+          Rebeca Aguilar {date.getFullYear()} - Powered by{" "}
+          <a
+            href="https://www.neuroexperience.com.ar/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <strong>NEURO STUDIO</strong>
+          </a>
+        </p>
       </div>
     </footer>
-  )
+  );
 }
 
 export const socialsMedia = [
@@ -63,4 +68,4 @@ export const socialsMedia = [
     icon: "assets/icons/iconInstagramFooter.svg",
     linkURL: "/",
   },
-]
+];

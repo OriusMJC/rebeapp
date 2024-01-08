@@ -4,12 +4,20 @@
   background-color: var(--color-primary);
   padding: 20px 25px;
   border-radius: 20px;
-  border: none;
+  border: 1px solid var(--color-primary);
+  transition: all .3s ease-in-out;
 }
 
 .BgTransparent {
   background-color: transparent;
   border: 1px solid var(--color-primary);
+}
+
+.Button:hover{
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+
 }
 
 @media (width < 520px) {
