@@ -25,8 +25,8 @@
   top: 0;
   right: -2px;
   bottom: 0;
-  width: 50px;
-  background: linear-gradient(to left, white, transparent);
+  width: 25px;
+  background: linear-gradient(to left, #FFFEF7, transparent);
 }
 .Testimonials {
   display: flex;
@@ -36,7 +36,7 @@
   max-width: 1239px;
   height: fit-content;
   min-height: 335px;
-  padding: 0px 0;
+  padding: 0px 25px 0px 5px;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -77,6 +77,7 @@
   margin-top: 15%;
   margin-right: 20px;
   border: none;
+  transition: all .3s ease;
 }
 
 @media (width < 1000px) {

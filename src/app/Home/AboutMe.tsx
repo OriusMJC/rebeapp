@@ -14,17 +14,23 @@ export default function AboutMe() {
               entre la necesidad real de alimentarme y el impulso impulsado por
               factores emocionales. Esta falta de conciencia me llevó a tomar
               decisiones alimenticias poco saludables y a desconectarme de las
-              verdaderas necesidades de mi cuerpo. La reconexión con mis señales
-              internas de hambre y saciedad no solo me permitió discernir con
-              claridad cuándo mi cuerpo requería nutrición y cuándo no, sino que
-              también se convirtió en el punto de partida fundamental para mi
-              enfoque en la alimentación intuitiva. Este proceso no solo influyó
-              positivamente en mis elecciones alimenticias, sino que también se
-              convirtió en una guía esencial en mi práctica como coach holística
-              y psicóloga especializada en psicoalimentación. Mi compromiso
-              profesional radica en ayudar a otros a explorar y comprender sus
-              propias señales internas, facilitando así un viaje hacia la
-              alimentación consciente y equilibrada.
+              verdaderas necesidades de mi cuerpo.
+              <br />
+              <br />
+              La reconexión con mis señales internas de hambre y saciedad no
+              solo me permitió discernir con claridad cuándo mi cuerpo requería
+              nutrición y cuándo no, sino que también se convirtió en el punto
+              de partida fundamental para mi enfoque en la alimentación
+              intuitiva.
+              <br />
+              <br />
+              Este proceso no solo influyó positivamente en mis elecciones
+              alimenticias, sino que también se convirtió en una guía esencial
+              en mi práctica como coach holística y psicóloga especializada en
+              psicoalimentación. Mi compromiso profesional radica en ayudar a
+              otros a explorar y comprender sus propias señales internas,
+              facilitando así un viaje hacia la alimentación consciente y
+              equilibrada.
             </p>
           </div>
         </div>

@@ -1,17 +1,24 @@
 .AboutMeContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 89px;
   padding-right: 10px;
 }
 .AboutMeContainer img{
-  height: fit-content;
-  width: 50%;
-  max-width: 719px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.AboutMeContainer p{
+  padding-right: 10px;
 }
 
 @media (width < 1300px) {
   .AboutMeContainer {
     flex-direction: column-reverse;
+    display: flex;
   }
   .AboutMeContainer img{
     max-height: 800px;
