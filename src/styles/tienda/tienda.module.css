@@ -4,12 +4,14 @@
 }
 
 .HeroStoreContainer {
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  gap: 20px;
 }
 .HeroStoreContainer h3 {
   color: var(--color-white);
-  /* font-family: Karla; */
-  font-size: 50px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 200;
   line-height: normal;

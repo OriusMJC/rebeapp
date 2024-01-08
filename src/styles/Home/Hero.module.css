@@ -12,6 +12,9 @@
   width: 47%;
   max-width: 788px;
 }
+.HomeHeroText h1{
+  margin-bottom: 15px;
+}
 .HomeHeroText h3 {
   margin-bottom: 75px;
 }
