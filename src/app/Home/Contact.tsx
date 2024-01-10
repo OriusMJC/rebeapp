@@ -11,6 +11,7 @@ export default function Contact() {
             <p>
               Si tienes preguntas, inquietudes o simplemente deseas comenzar tu
               viaje hacia la psicoalimentación positiva, estoy aquí para ti.
+              <br />
               Envíame un mensaje y juntos construiremos una estrategia
               personalizada para mejorar tu bienestar físico y emocional
             </p>

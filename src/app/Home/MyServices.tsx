@@ -38,7 +38,11 @@ export default function MyServices() {
             })}
           </div>
         </div>
-        <img className={s.MyServicesImg} src="/assets/img/imgFruits.png" alt="photo fruits" />
+        <img
+          className={s.MyServicesImg}
+          src="/assets/img/imgFruits.png"
+          alt="photo fruits"
+        />
       </div>
     </section>
   );
@@ -46,7 +50,12 @@ export default function MyServices() {
 
 const ServicesButton = ({ btn }: { btn: TServiceButton }) => {
   return (
-    <a href={btn.link} download={btn.donwload} className={s.ServicesButton}>
+    <a
+      href={btn.link}
+      download={btn.donwload}
+      className={s.ServicesButton}
+      target="_blank"
+    >
       <div>
         <img src={btn.iconURL} alt="icon services" />
       </div>
@@ -100,13 +109,13 @@ const dataArray: TService[] = [
         text: "Apple",
         iconURL: "/assets/icons/iconApple.svg",
         donwload: false,
-        link: "/",
+        link: "https://podcasts.apple.com/gt/podcast/re-conectando-conmigo/id1614527935?i=1000638127901",
       },
       {
         text: "Spotify",
         iconURL: "/assets/icons/iconSpotify.svg",
         donwload: false,
-        link: "/",
+        link: "https://open.spotify.com/episode/232Ad8A7ON1MhhAEaVd3ty?si=cTp5vXY2R8mqMXwlMvVRJA",
       },
     ],
   },

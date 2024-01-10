@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
-  padding: 54px 72px;
+  padding: 50px !important;
   border-radius: 20px;
 }
 .ConectWhitMeBlock div{
@@ -51,8 +51,9 @@
 .ConectWhitMeBlock img{
   width: 40%;
   max-width: 543px;
+  max-height: 400px;
   border-radius: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media (width < 1280px) {

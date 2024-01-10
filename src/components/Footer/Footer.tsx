@@ -54,18 +54,20 @@ export default function Footer() {
 export const socialsMedia = [
   {
     icon: "assets/icons/iconTelegramFooter.svg",
-    linkURL: "/",
+    linkURL: "https://t.me/rebehealthcoaching",
   },
   {
     icon: "assets/icons/iconSpotifyFooter.svg",
-    linkURL: "/",
+    linkURL:
+      "https://open.spotify.com/episode/232Ad8A7ON1MhhAEaVd3ty?si=cTp5vXY2R8mqMXwlMvVRJA",
   },
   {
     icon: "assets/icons/iconTikTokFooter.svg",
-    linkURL: "/",
+    linkURL: "https://vm.tiktok.com/ZM6ufNby1/",
   },
   {
     icon: "assets/icons/iconInstagramFooter.svg",
-    linkURL: "/",
+    linkURL:
+      "https://www.instagram.com/reel/C1230aZPR7V/?igsh=YnZ3ZGQ4Njl4eGt6",
   },
 ];
