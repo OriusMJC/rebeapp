@@ -14,9 +14,10 @@ import Autoplay from "embla-carousel-autoplay";
 Autoplay.globalOptions = { delay: 5000 };
 
 export default function Testimonials() {
-  const [emblaRef] = useEmblaCarousel({ loop: true, dragFree: false }, [
-    Autoplay(),
-  ]);
+  const [emblaRef] = useEmblaCarousel(
+    { loop: true, dragFree: false, skipSnaps: false },
+    [Autoplay()]
+  );
 
   return (
     <section>
