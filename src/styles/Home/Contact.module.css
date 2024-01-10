@@ -71,7 +71,7 @@
 }
 @media (width < 650px) {
   .ConectWhitMeBlock{
-    padding: 44px 52px;
+    padding: 44px 52px !important;
   }
   .ConectWhitMeBlock div{
     width: 100%;
@@ -84,7 +84,7 @@
 }
 @media (width < 520px) {
   .ConectWhitMeBlock{
-    padding: 24px 32px;
+    padding: 24px!important;
   }
   .ConectWhitMeBlock div h4{
     font-size: 32px;
