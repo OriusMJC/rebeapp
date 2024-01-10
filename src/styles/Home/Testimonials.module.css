@@ -1,39 +1,35 @@
-.TestimonialsFullContainer{
-  display: flex;
-  flex-direction: column;
-  gap: 47px;
-}
-
 .TestimonialsAndButton{
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
   width: 100%;
+  height: 100%;
 }
 
-.TestimonialsContainer {
-  position: relative;
+.TestimonialsContainer{
   display: flex;
-  flex-wrap: nowrap;
-  width: 90%;
-  max-width: 1239px;
-  height: fit-content;
-  min-height: 335px;
-}
-.Testimonials {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 50px;
+  align-items: center;
   width: 100%;
-  height: fit-content;
-  min-height: 335px;
-  padding: 0px 25px 0px 5px;
+  height: 100%;
+  margin-top: 50px;
+  min-width: 1200px;
+}
+
+.Testimonials{
+  width: 100%;
+  flex: 0 0 100%;
+  min-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  cursor: grab;
+  padding-left: 10px;
 }
 
 .CardTestimonial{
   background-color: var(--color-white);
   height: 324px;
   margin-bottom: 20px;
-  min-width: 378px;
+  max-width: 380px;
   list-style: none;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
@@ -58,6 +54,11 @@
   display: flex;
   gap: 15px;
 }
+.CardTestimonial img{
+  width: 78px;
+  height: 78px;
+  border-radius: 100px;
+}
 
 .TestimonialsButton{
   background-color: transparent;
@@ -68,65 +69,45 @@
   transition: all .3s ease;
 }
 
-@media (width < 1000px) {
-  .TestimonialsFullContainer{
-    width: 100%;
-  }
-  .TestimonialsButton{
-    display: none;
-  }
-  .TestimonialsContainer {
-    width: 106%;
-  }
-  .TestimonialsContainer::after {
-    right: 0px;
-    width: 0px;
-    background: transparent;
-  }
-  .Testimonials {
-    padding: 0 20px 0 3px;
-    overflow-x: scroll;
-    scrollbar-width: 0;
-  }
-  .Testimonials::-webkit-scrollbar{
-    width: 0;
-  }
-}
-@media (width < 520px) {
-  .TestimonialsContainer {
-    min-height: 285px;
-  }
-  .Testimonials {
-    gap: 20px;
-  }
+@media (width < 1700px){
   .CardTestimonial{
-    height: 314px;
-    padding: 0 0 25px;
+    min-width: none;
+    width: 300px;
   }
   .CardTestimonial .CardTestimonialData{
-    padding: 20px 20px 30px;
-  }
-  .CardTestimonial .CardTestimonialUser{
-    display: flex;
-    gap: 15px;
+    padding: 20px 24px;
   }
 }
-@media (width < 400px) {
+
+@media (width < 1500px){
+}
+
+@media (width < 1200px){
+  .Testimonials li:last-child{
+    display: none;
+  }
+}
+
+@media (width < 750px){
+  .TestimonialsContainer{
+    gap: 0;
+  }
+  .Testimonials{
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
   .CardTestimonial{
-    height: 250px;
-    padding: 0 0 25px;
-    min-width: 320px;
+    max-width: 250px;
   }
-  .CardTestimonial p{
+  .CardTestimonialData p{
     font-size: 18px;
   }
-  .CardTestimonial label{
+  .CardTestimonialUser label{
     font-size: 18px;
   }
-  .CardTestimonial h6{
-    font-size: 18px;
-  }
-  .CardTestimonial .CardTestimonialUser img{
-    height: 50px;
+  .CardTestimonialUser h6{
+    margin-top: 5px;
   }
 }
