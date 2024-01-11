@@ -24,10 +24,10 @@
   max-width: 950px;
   max-height: 580px;
   border-radius: 20px;
-  overflow: hidden;
 }
 .HomeHeroImgContainer img {
   width: 100%;
+  border-radius: 20px;
 }
 
 @media (width < 1280px) {
