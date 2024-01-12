@@ -1,4 +1,5 @@
 import s from "@/styles/Home/Contact.module.css";
+import { PHONE_NUMBER as number } from "@/utils/social";
 
 export default function Contact() {
   return (
@@ -15,11 +16,20 @@ export default function Contact() {
               Envíame un mensaje y juntos construiremos una estrategia
               personalizada para mejorar tu bienestar físico y emocional
             </p>
-            <a href="/" className="font-text">
+            <a
+              href={`https://wa.me/+${number}`}
+              className="font-text"
+              target="_blank"
+              rel="noreferrer"
+            >
               Conectar {ArrowContactSVG}
             </a>
           </div>
-          <img src="/assets/img/contactPhoto.png" />
+          <img
+            src="/assets/img/contactPhoto.png"
+            alt="REBE - Contacto"
+            title="REBE - Contacto"
+          />
         </div>
       </div>
     </section>

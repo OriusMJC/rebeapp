@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://rebeapp.vercel.app/sitemap.xml

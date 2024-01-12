@@ -7,7 +7,7 @@ export default function Button({
   link,
   href,
   bg,
-  font = 'font-subtitle-2',
+  font = "font-subtitle-2",
   style,
 }: {
   children: ReactNode;
@@ -15,7 +15,7 @@ export default function Button({
   link?: boolean;
   href?: string;
   bg?: "solid" | "transparent";
-  font?:string;
+  font?: string;
   style?: CSSProperties;
 }) {
   if (link || ancor)
@@ -24,7 +24,10 @@ export default function Button({
         href={href || "/"}
         target="_blank"
         style={style}
-        className={`${font} ${s.Button} ${bg === "transparent" && s.BgTransparent}`}
+        className={`${font} ${s.Button} ${
+          bg === "transparent" && s.BgTransparent
+        }`}
+        rel="noreferrer"
       >
         {children}
       </a>
@@ -32,7 +35,9 @@ export default function Button({
   return (
     <button
       style={style}
-      className={`${font} ${s.Button} ${bg === "transparent" && s.BgTransparent}`}
+      className={`${font} ${s.Button} ${
+        bg === "transparent" && s.BgTransparent
+      }`}
     >
       {children}
     </button>

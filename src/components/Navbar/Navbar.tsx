@@ -27,13 +27,16 @@ export default function Navbar() {
             }`}
           >
             {linksNav?.map((obj: TLinkNav) => {
+              const linkStyle = {
+                color: pathname === obj.url ? "#769E92" : "",
+              };
               return (
                 <Link
                   key={obj.text}
                   href={obj.url}
                   className="font-text"
                   onClick={() => setNavOpen(false)}
-                  style={{ color: `${pathname === obj.url ? "#769E92" : ""}` }}
+                  style={linkStyle}
                 >
                   {obj.text}
                 </Link>
