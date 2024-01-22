@@ -3,6 +3,7 @@ import Hero from "./Home/Hero";
 import MyServices from "./Home/MyServices";
 import Testimonials from "./Home/Testimonials";
 import Contact from "./Home/Contact";
+import NewsletterForm from "@/components/NewsLetter/NewsLetter";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <MyServices />
       <Testimonials />
       <Contact />
+      <NewsletterForm />
     </main>
   );
 }

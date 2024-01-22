@@ -1,0 +1,123 @@
+.NewsLetterSection{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.NewsLetterContainer{
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  padding-bottom: 70px;
+  border-radius: 20px;
+  transition: .2s;
+  animation: NLAppear .4s ease;
+  z-index: 10000;
+}
+.NewsLetterContainer h2, .NewsLetterContainer h3{
+  color: var(--color-white);
+}
+.NewsLetterContainer p{
+  color: var(--color-white);
+}
+.NewsLetterContainer .Xbtn{
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 10px;
+  transition: .2s;
+}
+.NewsLetterContainer .Xbtn:hover svg{
+  fill: var(--color-grey);
+}
+.NewsLetterContainer .Xbtn svg{
+  fill: var(--color-white);
+  height: 20px;
+  width: 20px;
+}
+
+.NewsLetterForm{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.NewsLetterForm input{
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  font-size: 18px;
+}
+.NewsLetterForm button{
+  cursor: pointer;
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  border: 2px solid transparent;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  transition: .2s;
+}
+.NewsLetterForm button:hover, .NewsLetterForm button:disabled{
+  cursor: auto;
+  background-color: transparent;
+  border: 2px solid var(--color-grey);
+}
+
+.FormError{
+  color: rgb(214, 7, 7);
+}
+
+@keyframes NLAppear {
+  0%{
+    top: -100%;
+  }
+  100%{
+    top: 30%;
+  }
+}
+
+@media (width < 1500px){
+  .NewsLetterContainer {
+    width: 80%;
+  }
+}
+
+@media (width < 800px){
+  .NewsLetterContainer {
+    top: 40%;
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (width < 420px) {
+  .NewsLetterContainer{
+    padding: 30px;
+    padding-bottom: 40px;
+  }
+  .NewsLetterForm input{
+    padding: 10px;
+    font-size: 14px;
+  }
+  .NewsLetterForm button{
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
