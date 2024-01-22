@@ -1,8 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-const ApiKey = process.env.MC_API_KEY || process.env.NEXT_PUBLIC_MC_API_KEY;
-const DC = process.env.MC_DC || process.env.NEXT_PUBLIC_MC_DC;
-const ListID = process.env.MC_LIST_ID || process.env.NEXT_PUBLIC_MC_LIST_ID;
+const ApiKey = process.env.MC_API_KEY;
+const DC = process.env.MC_DC;
+const ListID = process.env.MC_LIST_ID;
 
 export default async function handleNewsLetter(
   req: NextApiRequest,
