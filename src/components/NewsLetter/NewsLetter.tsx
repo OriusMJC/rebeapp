@@ -15,17 +15,18 @@ const validateEmail = (email: string) => {
 };
 
 export default function NewsletterForm() {
-  const [email, setEmail] = useState<string>("");
+  const [email, setEmail] = useState("");
   const [error, setError] = useState<string | null>();
-  const [subscribed, setSubscribed] = useState<boolean>(true);
-  const [showMsgSusbcribed, setShowMsgSusbcribed] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+  const [showMsgSusbcribed, setShowMsgSusbcribed] = useState(false);
 
   useEffect(() => {
     const isSubscribed = localStorage.getItem("subscribed");
     if (isSubscribed) {
       setSubscribed(true);
     } else {
-      setTimeout(() => setSubscribed(false), 2000);
+      setTimeout(() => setIsOpen(true), 3000);
     }
   }, []);
 
@@ -49,7 +50,7 @@ export default function NewsletterForm() {
       setError(null);
       localStorage.setItem("subscribed", "true");
       setShowMsgSusbcribed(true);
-      setTimeout(() => setSubscribed(true), 3000);
+      setTimeout(() => setIsOpen(false), 3000);
     }
   };
 
@@ -58,33 +59,43 @@ export default function NewsletterForm() {
   }
 
   return (
-    <section className={`${s.NewsLetterSection}`}>
-      <div className={`container ${s.NewsLetterFullContainer}`}>
-        <div className={`${s.NewsLetterContainer}`}>
-          <button className={s.Xbtn}><Xbtn/></button>
-          <h2 className="font-title-header">Newsletter</h2>
+    <>
+      {isOpen && (
+        <section className={`${s.NewsLetterSection}`}>
+          <div className={`${s.NewsLetterContainer}`}>
+            <button className={s.Xbtn} onClick={() => setIsOpen(false)}>
+              <Xbtn />
+            </button>
+            <h2 className="font-title-header">Únete a nuestro newsletter</h2>
+            <p className="font-description">
+              Descubre el camino hacia el bienestar con nuestro Newsletter.
+              Recibe alertas sobre nuevas guías de salud holísticas, cursos
+              exclusivos y contenido inspirador. Transforma tu vida, ¡suscríbete
+              ahora!
+            </p>
 
-          {!showMsgSusbcribed ? (
-            <>
-              <form className={`${s.NewsLetterForm}`} onSubmit={handleSubmit}>
-                <input
-                  type="email"
-                  placeholder="E-mail"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-                <button disabled={!validateEmail(email)} type="submit">
-                  Suscribirse
-                </button>
-              </form>
-              {error && <label className={s.FormError}>{error}</label>}
-            </>
-          ) : (
-            <h3>Gracias por suscribirte!!</h3>
-          )}
-        </div>
-      </div>
-    </section>
+            {!showMsgSusbcribed ? (
+              <>
+                <form className={`${s.NewsLetterForm}`} onSubmit={handleSubmit}>
+                  <input
+                    type="email"
+                    placeholder="E-mail"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                  <button disabled={!validateEmail(email)} type="submit">
+                    Suscribirse
+                  </button>
+                </form>
+                {error && <label className={s.FormError}>{error}</label>}
+              </>
+            ) : (
+              <h3>Gracias por suscribirte</h3>
+            )}
+          </div>
+        </section>
+      )}
+    </>
   );
 }
