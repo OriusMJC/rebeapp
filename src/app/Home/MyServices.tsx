@@ -98,7 +98,7 @@ const dataArray: TService[] = [
         text: "Descargar",
         iconURL: "/assets/icons/iconDownload.svg",
         donwload: true,
-        link: "/",
+        link: "/SOBREVIVE-EBOOK.pdf",
       },
     ],
   },
