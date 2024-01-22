@@ -12,7 +12,7 @@ export default function Hero() {
             Coach de salud holística y psicóloga especializada en psico
             alimentación
           </h3>
-          <Button link href={`https://wa.me/+${number}`}>
+          <Button link href="https://calendly.com/rebecamishell/30min">
             Agendar reunion
           </Button>
         </div>

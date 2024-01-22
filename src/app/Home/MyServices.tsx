@@ -1,4 +1,5 @@
 import s from "@/styles/Home/MyServices.module.css";
+import { PHONE_NUMBER as number } from "@/utils/social";
 
 type TService = {
   Title: string;
@@ -73,7 +74,7 @@ const dataArray: TService[] = [
         text: "Agendar",
         iconURL: "/assets/icons/iconProfile.svg",
         donwload: false,
-        link: "/",
+        link: `https://wa.me/+${number}`,
       },
     ],
   },
@@ -85,7 +86,7 @@ const dataArray: TService[] = [
         text: "Agendar",
         iconURL: "/assets/icons/iconCalendar.svg",
         donwload: false,
-        link: "/",
+        link: "https://calendly.com/rebecamishell/30min",
       },
     ],
   },
